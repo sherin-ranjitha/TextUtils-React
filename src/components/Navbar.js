@@ -1,14 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-//import { Link } from "react-router-dom";
+
 
 export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <div className="container-fluid">
-        {/* <Link className="navbar-brand" to="/">
-          {props.title}
-        </Link> */}
+        
         <a className="navbar-brand" href="#">
           {props.title}
         </a>
@@ -30,24 +28,10 @@ export default function Navbar(props) {
                 Home
               </a>
             </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link" to="/about" >
-                {props.aboutText}
-              </Link>
-            </li> */}
+           
 
           </ul>
-          {/* <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-primary" type="submit">
-              Search
-            </button>
-          </form> */}
+          
           <div className ={` form-check form-switch text-${props.mode === 'light'? 'dark' : 'light'}`}>
             <input
               class="form-check-input"
@@ -57,7 +41,7 @@ export default function Navbar(props) {
               id="flexSwitchCheckDefault"
             />
             <label class="form-check-label" for="flexSwitchCheckDefault">
-              Enable DarkMode
+              Enable Dark mode
             </label>
           </div>
 
@@ -70,7 +54,7 @@ export default function Navbar(props) {
               id="flexSwitchCheckDefault"
             />
             <label class="form-check-label" for="flexSwitchCheckDefault">
-              Enable Red DarkMode
+              Enable Red mode
             </label>
           </div>
 
@@ -84,7 +68,7 @@ export default function Navbar(props) {
               id="flexSwitchCheckDefault"
             />
             <label class="form-check-label" for="flexSwitchCheckDefault">
-              Enable Green DarkMode
+              Enable Green mode
             </label>
           </div>
 
